@@ -1,0 +1,81 @@
+
+.blank-view {
+	// display: none;
+	background: #ddd;
+	color: #777;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 83px 0 0;
+
+	[class*="icon-"],
+	[class^="icon-"] {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 17px;
+		height: 17px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		&.icon-karaqu         { background-image: url(~/icons/icon-karaqu.png); }
+		&.icon-karaqu-ab      { background-image: url(~/img/defiant-ab-logo.png); background-size: 32px 32px; }
+		&.icon-karaqu-cli     { background-image: url(~/icons/icon-karaqu-cli.png); }
+		&.icon-defiant-js     { background-image: url(~/icons/icon-defiant-js.png); }
+		&.icon-midi-fur-alles { background-image: url(~/icons/icon-midi-fur-alles.png); }
+	}
+
+	h2 {
+		height: 47px;
+		text-align: center;
+		font-size: 29px;
+		font-weight: 100;
+		padding-top: 19px;
+		margin-bottom: 13px;
+		color: #555;
+	}
+
+	.quick-links {
+		// background: rgba(#000,.05);
+		list-style: none;
+		width: 500px;
+		font-size: 0;
+		margin: 37px auto;
+
+		li {
+			// background: rgba(#000,.05);
+			position: relative;
+			width: 90px;
+			margin: 0 5px;
+			padding: 5px 0;
+			font-size: 13px;
+			text-align: center;
+			display: inline-block;
+			opacity: .5;
+			cursor: pointer;
+
+			&:not(.disabled):hover {
+				opacity: 1;
+			}
+
+			&.disabled {
+				cursor: default;
+			}
+
+			i {
+				position: relative;
+				width: 34px;
+				height: 34px;
+				background-image: url(~/icons/icon-placeholder.png);
+			}
+
+			span {
+				display: block;
+				margin: 9px 0 0;
+			}
+		}
+	}
+}
