@@ -1,7 +1,10 @@
-<content>
+<content data-show="blank-view">
 	<div class="tab-bar" data-click="selecte-tab">
 		<!-- <span class="tab pin"></span> -->
-		<span class="tab active"><i class="icon-karaqu"></i> Blank View</span>
+		<span class="tab active">
+			<i class="icon-karaqu"></i> Blank View
+			<i class="icon-close" data-click="close-tab"></i>
+		</span>
 		<!-- <span class="tab-add"></span> -->
 	</div>
 	<div class="location-bar">
@@ -27,29 +30,30 @@
 	<div class="tab-body">
 		<!-- <iframe frameborder="0" src="https://www.defiantsystem.com/karaqu-beta/"></iframe> -->
 		<!-- <iframe frameborder="0" src="https://www.defiantjs.com/"></iframe> -->
+		<!-- <iframe frameborder="0" src="https://www.wikipedia.org/"></iframe> -->
 
-		<div class="blank-view" data-area="blank-view">
+		<div class="blank-view" data-area="blankView">
 			<h2>Welcome to Qurome.</h2>
-			<ul class="quick-links">
-				<li data-url="htts://www.defiantsystem.com/">
+			<ul class="quick-links" data-click="select-quick-link">
+				<li data-url="https://www.defiantsystem.com/karaqu-beta/">
 					<i class="icon-karaqu-ab"></i>
-					<span>Defiant System</span>
-				</li>
-				<li data-url="htts://www.defiantsystem.com/karaqu-beta/">
-					<i class="icon-karaqu"></i>
 					<span>Karaqu Beta</span>
 				</li>
-				<li data-url="htts://www.defiantsystem.com/karaqu-cli/">
+				<li data-url="https://www.defiantsystem.com/karaqu-cli/">
 					<i class="icon-karaqu-cli"></i>
 					<span>Karaqu CLI</span>
 				</li>
-				<li data-url="htts://www.defiantjs.com">
+				<li data-url="https://www.defiantjs.com">
 					<i class="icon-defiant-js"></i>
 					<span>Defiant.js</span>
 				</li>
-				<li data-url="htts://www.defiantjs.com/midi-fur-alles/">
+				<li data-url="https://www.defiantjs.com/midi-fur-alles/">
 					<i class="icon-midi-fur-alles"></i>
 					<span>midi-fur-alles.js</span>
+				</li>
+				<li data-url="https://www.wikipedia.org/">
+					<i class="icon-wikipedia"></i>
+					<span>Wikipedia</span>
 				</li>
 			</ul>
 		</div>

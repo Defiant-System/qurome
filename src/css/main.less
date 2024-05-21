@@ -37,6 +37,8 @@ backdrop-filter: blur(7px);
 
 .win-body_ {
 	background: rgba(#fff,.15);
+	pointer-events: none;
+	z-index: 19;
 }
 
 content {
@@ -47,11 +49,27 @@ content {
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
+	pointer-events: none;
+
+	&[data-show="blank-view"] {
+		.tab-body {
+			.blank-view { z-index: 2; }
+			iframe { z-index: 1; }
+		}
+	}
+
+	&[data-show="iframe"] {
+		.tab-body {
+			.blank-view { z-index: 1; }
+			iframe { z-index: 2; }
+		}
+	}
 
 	.tab-bar {
 		position: relative;
 		height: 36px;
 		padding: 7px 0 0 69px;
+		pointer-events: none;
 		font-size: 0;
 		z-index: 2;
 
@@ -61,11 +79,12 @@ content {
 			padding: 7px 11px 0;
 			margin: 0 3px 0 0;
 			border-radius: 5px 5px 0 0;
-			min-width: 173px;
+			min-width: 193px;
 			height: 26px;
 			display: inline-block;
 			font-size: 12px;
 			vertical-align: top;
+			pointer-events: all;
 
 			&:before,
 			&:after {
@@ -84,12 +103,27 @@ content {
 				transform: scale(-1, 1);
 			}
 
+			&:hover {
+				i[data-click="close-tab"] {
+					display: block;
+				}
+			}
+
 			&.active {
 				height: 30px;
 			}
 
 			&.pin {
 				min-width: 23px;
+			}
+
+			i[data-click="close-tab"] {
+				position: absolute;
+				top: 6px;
+				right: 5px;
+				left: auto;
+				display: none;
+				cursor: pointer;
 			}
 
 			[class*="icon-"],
@@ -105,6 +139,7 @@ content {
 				background-repeat: no-repeat;
 				background-position: 50% 50%;
 
+				&.icon-close  { background-image: url(~/icons/icon-close.png); }
 				&.icon-karaqu { background-image: url(~/icons/icon-karaqu.png); }
 			}
 		}
@@ -177,10 +212,10 @@ content {
 
 	.tab-body {
 		flex: 1;
-		// background: #e2e2e2;
 		position: relative;
 
 		iframe {
+			position: relative;
 			width: 100%;
 			height: 100%;
 		}
