@@ -28,6 +28,9 @@ const qurome = {
 			case "open-help":
 				karaqu.shell("fs -u '~/help/index.md'");
 				break;
+			case "close-tab":
+				// proxy event
+				return Self.blankView.dispatch(event);
 			default:
 				if (event.el) {
 					let pEl = event.el.parents(`div[data-area]`);
