@@ -1,10 +1,12 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
 	<style type="text/css">
-		.st0{fill:#1B73E8;filter:url(#defapp-filter-1);}
-		.st1{fill:#E43B2E;filter:url(#defapp-filter-1);}
-		.st2{fill:#FCC628;filter:url(#defapp-filter-1);}
-		.st3{fill:#279A47;filter:url(#defapp-filter-1);}
+		.st0{fill:#fff;filter:url(#defapp-filter-1);}
+		.st1{fill:#9E77B5;}
+		.st2{fill:#DA7CB3;}
+		.st3{fill:#EE4097;}
+		.st4{fill:#B94B9C;}
+		.st5{fill:url(#SVGID_1_);}
 	</style>
 	<filter filterUnits="objectBoundingBox" id="defapp-filter-1">
 		<feOffset dx="0" dy=".5" in="SourceAlpha" result="defappShadowOffsetOuter1"></feOffset>
@@ -15,10 +17,14 @@
 			<feMergeNode in="SourceGraphic"/>
 		</feMerge>
 	</filter>
-	<circle class="st0" cx="26.9" cy="25.5" r="11"/>
-	<path class="st1" d="M14.8,19.3c2.3-4.4,6.8-7.4,12.1-7.4h20.3C42.8,5.3,35.4,1,26.9,1c-4.4,0-8.5,1.2-12.1,3.2V19.3z"/>
-	<path class="st2" d="M51.3,25.6c0-4.4-1.1-8.6-3.2-12.2h-15c4.4,2.3,7.4,6.8,7.4,12.1c0,3.6-1.4,7-4,9.6c-1.3,1.3-2.9,2.3-4.6,3
-		L47,53.2l7.6-7.6l-7-7C50,34.7,51.3,30.3,51.3,25.6z"/>
-	<path class="st3" d="M13.3,25.5c0-0.1,0-0.2,0-0.3V5.1C6.7,9.5,2.4,17,2.4,25.5C2.4,39,13.4,50,26.9,50c1.6,0,3.3-0.2,4.8-0.5
-		L17.5,35.4C14.9,32.9,13.3,29.4,13.3,25.5z"/>
+	<radialGradient id="SVGID_1_" cx="27.5" cy="21.4294" r="21.7353" fx="27.4397" fy="5.7059" gradientTransform="matrix(1 0 0 0.8588 0 3.0248)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#fff"/>
+		<stop  offset="0.8999" style="stop-color:#fff;stop-opacity:0"/>
+	</radialGradient>
+	<circle class="st0" cx="27.5" cy="26.5" r="25.6"/>
+	<circle class="st1" cx="27.5" cy="26.5" r="8.3"/>
+	<path class="st2" d="M17.9,31.3c-0.7-1.5-1.2-3.1-1.2-4.8c0-5.9,4.7-10.7,10.6-10.8v0h22.6c-4-8.3-12.5-14.1-22.4-14.1 C19,1.6,11.4,5.9,7,12.5L17.9,31.3z"/>
+	<path class="st3" d="M28.1,15.6c1.6,0.1,3.3,0.6,4.8,1.4c5.1,3,6.8,9.5,4,14.6l0,0L25.5,51.2c9.2,0.7,18.4-3.7,23.4-12.3 c4.3-7.4,4.4-16,1-23.2L28.1,15.6z"/>
+	<path class="st4" d="M36.5,32.4c-0.9,1.4-2.1,2.5-3.6,3.4C27.8,38.7,21.3,37,18.3,32l0,0L7,12.5C1.8,20.1,1,30.3,6,38.9 c4.3,7.4,11.7,11.8,19.6,12.4L36.5,32.4z"/>
+	<circle class="st5" cx="27.5" cy="26.5" r="24.8"/>
 </svg>
